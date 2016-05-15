@@ -1,5 +1,4 @@
 # MeanStart
-========================================
 
 Basic Starting point for creating a Mean App. Using Gulp as a build tool.
 
