@@ -1,0 +1,54 @@
+//reset some stuff
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0} 
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+*:focus {
+    outline: none;
+}
+body,html{height:100%;}
+ul{list-style-type: none;}
+
+//mixins
+@mixin row-wrap($content) {
+	display: -webkit-box;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-webkit-justify-content: $content;
+  justify-content: $content;
+}
+
+@mixin column($content) {
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: $content;
+  justify-content: $content;
+}
+
+h1{
+  font: 600 30px Verdana,sans-serif;
+  margin-bottom: 18px;
+}
+
+body{
+	font-family: Verdana, sans-serif;
+	background-color:#fff;
+	color: #000;
+}
+
+.base{
+  padding:32px 12px;
+  max-width:800px;
+  margin:0 auto;
+  min-height:100%;
+  margin-bottom: -56px; 
+}
+
+.footer{
+  border-top: 1px solid #ececec;
+  padding:16px 12px;
+  height:56px;
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+		<title>MeanStart</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<link rel="stylesheet" href="../static/css/style.min.css" />	
+		<script src="../static/js/main.js"></script>
+
+	</head>
+	<body ng-app="MeanStart" ng-controller="mainController">
+
+		<section class="base">
+			<h1>{{ title }}</h1>
+			<h3>{{ getHeadline() }}</h3>
+		</section>
+
+		<footer ng-include="'./static/partials/footer.html'"></footer>
+
+	</body>
+</html>
